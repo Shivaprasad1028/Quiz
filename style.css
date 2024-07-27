@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+    background-image: linear-gradient(#c1a6e4,#c1a6e4);
+}
+body,html{
+    overflow-x: hidden;
+    height: 100%;
+}
+.header{
+    background-color: #a600ff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    
+    
+}
+.header h2{
+margin-top: 19px;
+}
+.sidebar{
+width: 300px;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: fixed;
+left: 0;
+background-color: #a600ff ;
+transform: translateX(-300px);
+transition: transform 250ms ease-in-out;
+}
+#opensidebarmenu:checked ~ #sidebarmenu{
+    transform: translateX(0px);
+}
+.menu{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 80%;
+
+ margin-left: 30px;
+    gap: 2.4rem;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16.5px;
+    font-weight: 600;
+}
+.menu a:hover{
+    background-color: #c1a6e4;
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    color: black;
+
+
+}
+.sidebar h2{
+     text-align: center;
+    margin-top: 20%;
+    
+     color: white;
+     
+}
+.sideicontoggle{
+    width: 20px;
+    height: 20px;
+    
+   
+    z-index: 20;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    cursor: pointer;
+}
+.sideicontoggle i{
+    color: white;
+}
+.line{
+    margin: 15px 25px;
+
+    color: white;
+   
+}
+.body{
+    margin-top: 5%;
+   
+    font-size: 20px;
+ 
+}
+.body .firstline{
+     margin: 10px 35px;
+    text-align: center;
+}
+.list ,.btn{
+ margin-left: 35%;
+}
+.list li{
+    font-weight: 700;
+}
+.body .big{
+    font-weight: 500;
+}
+.row {
+    margin-top: 10%;
+}
+
+.row h5{
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+.row .col-md-6{
+   padding-bottom: 10px;
+}
+.row button a{
+    text-decoration: none;
+    color: white;
+}
+.row button{
+    background-color: #a600ff;
+    border: 0;
+    padding: 2px 10px;
+    font-weight: 400;
+    border-radius: 5px;
+      
+}
+.row button:hover{
+    transform: scale(1.05) translateY(1px);
+    transition: 0.4s;
+}
+.begin{
+    font-size: 23px;
+    font-weight: 500;
+}
+.instruct{
+ margin: 10px 50px;
+}
